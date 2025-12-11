@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Gamer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-light">
+
+<div class="container p-4 mt-5 shadow bg-secondary rounded">
+    <h2 class="text-center">Iniciar Sesión</h2>
+
+    <form action="validar_login.php" method="POST">
+
+        <input type="text" name="usuario" class="form-control mt-3" placeholder="Usuario" required>
+
+        <input type="password" name="password" class="form-control mt-3" placeholder="Contraseña" required>
+
+        <button class="btn btn-success mt-4 w-100">Ingresar</button>
+    </form>
+</div>
+
+</body>
+</html>

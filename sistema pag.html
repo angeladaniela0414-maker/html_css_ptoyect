@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GameCenter Panel</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo1.css">
+</head>
+
+<body>
+
+<div class="container mt-4 shadow p-4">
+	<h2 class="text-center">Comentarios Gamers</h2>
+
+	<form method="POST" action="guardar_comentario.php">
+		<input type="text" name="usuario" class="form-control mt-2" placeholder="Usuario" required>
+		<textarea name="comentario" class="form-control mt-2" placeholder="Escribe un comentario gamer" required></textarea>
+
+		<button class="btn btn-success mt-3 w-100">Guardar Comentario</button>
+	</form>
+
+	<hr>
+
+	<h3 class="text-center">Lista de Comentarios</h3>
+
+	<table class="table table-bordered table-hover mt-3">
+		<thead>
+			<tr>
+				<th>Usuario</th>
+				<th>Comentario</th>
+				<th>Fecha</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<?php
+				include("conexion.php");
+				$sql = "SELECT usuario, comentario, fecha FROM comentarios ORDER BY fecha DESC";
+				$res = $conn->query($sql);
+
+				while($fila = $res->fetch_assoc()){
+					echo "<tr>
+						<td>".$fila['usuario']."</td>
+						<td>".$fila['comentario']."</td>
+						<td>".$fila['fecha']."</td>
+					</tr>";
+				}
+			?>
+
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>

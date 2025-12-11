@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Carvajal - Technology Newspaper</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            background-color: #004494;
+        }
+        section {
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daniela Carvajal</h1>
+        <p>Technology Newspaper</p>
+    </header>
+    <nav>
+        <a href="#informatica">Carrera de Informática</a>
+        <a href="#desarrollo-web">Desarrollo Web</a>
+        <a href="#sistemas-operativos">Sistemas Operativos</a>
+    </nav>
+    <section id="informatica">
+        <div class="content">
+            <h2 class="section-title">Artículos sobre la Carrera de Informática</h2>
+            <img src="ruta/a/tu/imagen1.jpg" alt="Carrera de Informática">
+            <p>Aquí se encuentran los artículos más recientes sobre la carrera de informática...</p>
+        </div>
+    </section>
+    <section id="desarrollo-web">
+        <div class="content">
+            <h2 class="section-title">Desarrollo Web</h2>
+            <img src="ruta/a/tu/imagen2.jpg" alt="Desarrollo Web">
+            <p>Explora artículos y recursos sobre desarrollo web...</p>
+        </div>
+    </section>
+    <section id="sistemas-operativos">
+        <div class="content">
+            <h2 class="section-title">Sistemas Operativos</h2>
+            <img src="ruta/a/tu/imagen3.jpg" alt="Sistemas Operativos">
+            <p>Información y novedades sobre sistemas operativos...</p>
+        </div>
+    </section>
+</body>
+</html>

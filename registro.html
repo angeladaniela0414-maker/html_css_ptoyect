@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Probando Bootstrap</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href=css/estilo.css>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	</head>
+
+	<body>
+     <div class="container">
+		<div class="row mt-5">
+			<div class="col">
+				<h2>Registro de Usuario</h2>
+				<hr>
+				<form action="">
+					<label for="cedula">Cédula: </label>
+					<input class="form-control" type="text" name="cedulatb" id="cedulatb" placeholder="Ingresa la cédula" required>
+
+					<label for="nombre">Nombre: </label>
+					<input class="form-control form-control-lg" type="text" name="nombretb" id="nombretb" placeholder="Ingrese sus nombres" required>
+
+					<label for="apellido">Apellido: </label>
+					<input class="form-control form-control-sm" type="text" name="apellidotb" id="apellidotb" placeholder="Ingresa sus apellidos" required>
+
+					<label for="direccion">Direccion: </label>
+					<input class="form-control" type="direccion" name="tb" id="direcciontb" placeholder="Cdla. Av la prensa calle p3" required>
+
+               <label for="telefono">Telefono: </label>
+					<input class="form-control" type="telefono" name="telefonotb" id="telefonotb" placeholder="Ingrese su Telefono" required>
+
+					<label for="email">Email: </label>
+					<input class="form-control" type="email" name="emailtb" id="emailtb" placeholder="Ingrese su Correo" required>
+					
+					<label for="password">contraseña: </label>
+					<input class="form-control" type="password" name="passwordtb" id="passwordtb" placeholder="Contraseña" required>
+               <div style="margin-top:15px;">
+        	      <input style="margin-left:10px;" type="checkbox" id="mostrar_contrasena" title="clic para mostrar contraseña"/> &nbsp;&nbsp;Mostrar Contraseña</div>
+
+					<p>Seleccione fecha de nacimiento </p>
+               <p><input type="date" name="fechanac" id="fechanac" required></p>
+               <p><input type="submit" name="registrar" value="registrase" required></p>
+                  
+               <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lc_N8ooAAAAAHo-v6aBB_BK8myVcHt2Y57UNmly"></div>
+
+					<a href="#" class="btn btn-outline-primary btn-lg btn-block"> Guardar </a>
+
+					<a href="formulario.html" class="btn btn-outline-danger btn-lg btn-block"> Salir </a>
+                 </form> 
+		    </div>	
+		</div>
+    </div>	
+	
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+		<script src="unpkg.com_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+	</body>
+</html>

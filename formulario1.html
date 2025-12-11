@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro Gamer</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo1.css">
+</head>
+
+<body>
+
+<header class="text-center text-white p-4">
+	<h1>Registro Gamers</h1>
+</header>
+
+<section class="container mt-4 shadow p-4">
+	<form method="POST" action="guardar_formulario.php">
+		<h2 class="text-center">Crea tu Cuenta Gamer</h2>
+
+		<input type="text" name="telefono" class="form-control mt-3" placeholder="Teléfono" required>
+
+		<input type="email" name="email" class="form-control mt-3" placeholder="Correo electrónico" required>
+
+		<input type="password" name="password" class="form-control mt-3" placeholder="Contraseña" required>
+
+		<textarea name="direccion" class="form-control mt-3" placeholder="Dirección"></textarea>
+
+		<button class="btn btn-primary mt-4 w-100" type="submit">Guardar Registro</button>
+	</form>
+</section>
+
+</body>
+</html>
